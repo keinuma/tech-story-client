@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="result-wrap">
     <h1>Home</h1>
     <p>
       <router-link to="/register">登録</router-link>
@@ -10,6 +10,9 @@
     <button @click="query">
       GraphQL実行
     </button>
+    <div class="graphql-result">
+      {{ data }}
+    </div>
   </div>
 </template>
 
@@ -57,5 +60,13 @@ export default {
 </script>
 
 <style scoped>
-
+.result-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.graphql-result {
+  margin-top: 24px;
+  max-width: 700px;
+}
 </style>
