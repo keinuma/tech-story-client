@@ -14,11 +14,10 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "baseUrl": "./client",
+    "baseUrl": "./src",
     "skipLibCheck": true,
     "types": [
-      "webpack-env",
-      "jest"
+      "node"
     ],
     "paths": {
       "@/*": [
